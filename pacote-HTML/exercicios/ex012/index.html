@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1> Inserindo vídeos com hospedados localmente</h1>
+    <p>Este vídeo ésta hospedado no meu próprio servidor </p>
+    <video src="midia/meu-video.mp4" width="500" controls loop autoplay></video>
+
+    <h1>Outro modelo para vídeo</h1>
+    <video width="500" poster="imagem/pexels-alex-azabache-3879070.jpg" width="500" height="300" controls >
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/Meu-Videom4v.m4v" type="video/mp4">
+            <source src="midia/Meu-Video-1.webm" type="video/webm">
+            <p> Seu navegador não é compatível com esse vídeo</p><a href="midia/meu-video.mp4"></a>
+        </video>
+        <h1>Inserindo video do youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a-Cbn65za5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

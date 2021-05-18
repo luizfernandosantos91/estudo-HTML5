@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mídia em HTML</title>
 </head>
 <body>
-    
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:650px )" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <img src="imagens/foto-g.png" alt="image flexível">
+    </picture>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos a reprodução de áudio em HTML5.  </p>
+        <audio src="midia/Voices-Patrick Patrikios.mp3" controls   ></audio>
+    <h1>Outra forma de áudio</h1>
+    <audio preload="none" controls  >
+        <source src="midia/Voices-Patrick Patrikios.mp3" type="audio/meg" >
+        <source src="midia/Voices-Patrick Patrikios.mp3" type="audio/ogg" >
+        <source src="midia/Voices-Patrick Patrikios.mp3" type="audio/wav" >
+            <p>Infelismente seu navegador não consegue reprodizir o áudio</p>
+            <a href="midia/Voices-Patrick Patrikios.mp3"clique para baixar  ></a>
+    </audio>
+    <h1></h1>
+
+
 </body>
-</html>
+</html> 
