@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <script>
+        function abrirDialog(){
+            Document.getElementById("d1").setAttribute("open","");
+        }
+        function fecharDialog(){
+            Document.getElementById("d1").removeAttribute("open");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="abrirDialog">Abrir</button>
+    <button onclick="fecharDialog">fechar</button>
+        <dialog id="d1" open>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit consequuntur, doloribus natus recusandae eum nihil officia, adipisci cumque earum incidunt perferendis totam molestiae. Debitis nobis corrupti ut architecto provident.</p>
+        </dialog>
+</body>
+</html>
