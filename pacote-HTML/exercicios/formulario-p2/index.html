@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .quebra{ display: block;}
+    form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+
+    }
+
+
+</style>
+
+</head>
+<body>
+        <form name="f_cadastro" action="#" method="GET">
+            <label class="quebra">Hora</label>
+            <input type="time" name="f_hora" min="09:00" max="17:00" required>
+
+            <label class="quebra">Data</label>
+            <input type="date" name="f_data" min="2021-01-01" max="2021-31-12" required>
+
+            <label class="quebra">Data e hora</label>
+            <input type="datetime-local" name="f_data_hora">
+
+            <input class="quebra" type="submit" name="f_envia" value="Enviar">
+
+        </form>
+
+
+</body>
+</html>
