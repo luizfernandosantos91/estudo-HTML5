@@ -18,12 +18,11 @@
 
     }
 
-
 </style>
 
 </head>
 <body>
-        <form name="f_cadastro" action="#" method="GET">
+        <form name="f_cadastro" action="#" method="GET" enctype="multipart/form-data">
             <label class="quebra">Hora:</label>
             <input type="time" name="f_hora" min="09:00" max="17:00">
 
@@ -61,8 +60,22 @@
             <label class="quebra">Pesquisa:</label>
             <input type="search" name="f_pesquisa" >
 
+            <label class="quebra">Selecione o arquivo: ></label>
+            <input type="file" name="f_arquivo" multiple >
+
+            <label class="quebra">Digite o URL:</label>
+            <input type="url" name="f_url">
+
+            <select class="quebra espaco_t" name="f_gen" >
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+               
+            </select>
+
+
 
             <input class="espaco_t quebra" type="submit" name="f_envia" value="Enviar">
+
 
         </form>
 

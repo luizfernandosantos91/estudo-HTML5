@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+<style>
+    .quebra{ display: block;}
+    .espoca{ margin-bottom: 15px;}
+    .espaco_t{margin-top: 15px;}
+    
+    form{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eee;
+
+    }
+
+</style>
+
+</head>
+<body>
+        <form name="f_cadastro" action="#" method="GET" >
+            
+            <input list="f_cores" name="f_cor">
+            <datalist id="f_cores">
+                <option value="red">Vermelho</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="black">Preto</option>
+                <option value="yalow">Amarelo</option>
+                <option value="pink">Rosa</option>
+                <option value="width">Branco</option>
+            </datalist>
+            <input list="f_transportes" name="f_transporte">
+            <datalist id="f_transportes">
+                <option value="car">Carro</option>
+                <option value="motion">Moto</option>
+                <option value="airplane">Avião</option>
+                <option value="train">Trem</option>
+                <option value="bicycle">Bicicleta</option>
+                <option value="truck">Caminhão</option>
+                <option value="ship">Navio</option>
+            </datalist>
+
+            <textarea class="quebra espaco_t" name="f_comentario" id="" cols="30" rows="10" maxlength="200" autofocus>Estudo html</textarea>
+
+
+
+            <input class="espaco_t quebra" type="submit" name="f_envia" value="Enviar">
+
+
+        </form>
+
+
+</body>
+</html>
