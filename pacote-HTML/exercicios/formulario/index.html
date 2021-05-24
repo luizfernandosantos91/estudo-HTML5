@@ -6,21 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        input{
-            display: block;
+        .quebra{
+            display:block;
+            
         }
+        .espaco{margin-bottom: 5px; }
         form{
             border: 1px solid #000;
             padding: 10px;
             border-radius: 15px;
             background-color: #eee;
         }
+        #dv_btns{
+            display: flex;
+        }
     </style>
 </head>
 <body>
-    <form  name="f_cadastro" action="" method="" enctype="" >
-        <label for="">nome:</label>
-        <input type="text" name="f_nome" id="">
+    <form  name="f_cadastro" action="#" method="GET"  >
+        <label for="">Nome:</label>
+        <input class="espaco quebra" type="text" name="f_nome" maxlength="20" size="25"  >
+        <label for="">Senha:</label>
+        <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15">
+        <div id="dv_btns">
+            <label class="espaco quebra">Linguagem</label>
+            <input type="checkbox" name="f_HTML" value="HTML" checked>html
+            <input type="checkbox" name="f_CSS" value="CSS" checked>CSS
+            <input type="checkbox" name="f_PHP" value="PHP"checked >PHP 
+            <input class="espaco quebra" type="submit" name="f_btn_enviar"  value="Gravar">
+            <input class="espaco quebra" type="reset" name="f_btn_limpar"  value="Limpar">
+            <input class="espaco quebra" type="button" name="f_btn_nada"  value="nada">
+            <label class="quebra espaco">Possui conhecimento</label>
+            <input class="quebra espaco" type="radio" name="f_linguagem" value="s" checked>Sim
+            <input class="quebra espaco" type="radio" name="f_linguagem" value="n">Não
+        </div>
     </form>
 </body>
 </html>
