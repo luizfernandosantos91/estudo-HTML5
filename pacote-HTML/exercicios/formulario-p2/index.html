@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulários</title>
 <style>
     .quebra{ display: block;}
+    .espoca{ margin-bottom: 15px;}
+    .espaco_t{margin-top: 15px;}
+    
     form{
         border: 1px solid #000;
         padding: 10px;
@@ -21,16 +24,45 @@
 </head>
 <body>
         <form name="f_cadastro" action="#" method="GET">
-            <label class="quebra">Hora</label>
-            <input type="time" name="f_hora" min="09:00" max="17:00" required>
+            <label class="quebra">Hora:</label>
+            <input type="time" name="f_hora" min="09:00" max="17:00">
 
-            <label class="quebra">Data</label>
-            <input type="date" name="f_data" min="2021-01-01" max="2021-31-12" required>
+            <label class="quebra">Data:</label>
+            <input type="date" name="f_data" min="2021-01-01" max="2021-31-12" >
 
-            <label class="quebra">Data e hora</label>
+            <label class="quebra">Data e hora:</label>
             <input type="datetime-local" name="f_data_hora">
 
-            <input class="quebra" type="submit" name="f_envia" value="Enviar">
+            <label class="quebra">Mes:</label>
+            <input type="month" name="f_Mes">
+
+            <label class="quebra espaco_t">Semana:</label>
+            <input type="week" name="f_Semana" >
+
+            <input type="hidden" nome="estudo" value="estudoHTML">
+
+            <label class="espaco_t quebra">E-mail:</label>
+            <input type="email" name="f_email" >
+
+            <label class="quebra">Selecione uma cor: </label>
+            <input type="color" name="f_cor">
+
+            <input class="espaco_t quebra" src="58806_02_zelda-breath-wild-looks-glorious-1080p-60fps.webp" height="200" width="300" type="image" name="f_enviar2">
+
+            <label class="quebra">Telefone: </label>
+            <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+            
+            <label class="quebra">Senha:</label>
+            <input type="password" name="f_senha" pattern="[a-zA-Z0-9]{6}">
+
+            <label class="quebra">Escolha um numero: </label>
+            <input type="number" name="f_numero" step="1" min="0" max="10">
+
+            <label class="quebra">Pesquisa:</label>
+            <input type="search" name="f_pesquisa" >
+
+
+            <input class="espaco_t quebra" type="submit" name="f_envia" value="Enviar">
 
         </form>
 
